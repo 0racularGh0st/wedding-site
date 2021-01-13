@@ -1,0 +1,49 @@
+
+.invitation-main-container{
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+}
+.invite{
+    margin: auto;
+    display: block;
+    &.note{
+        margin-top: 3rem;
+    }
+}
+@media screen and (min-width: 320px) {
+    .invite{
+        width: 300px;
+    }
+}
+@media screen and (min-width: 375px) {
+    .invite{
+        width: 340px;
+    }
+}
+@media screen and (min-width: 420px) {
+    .invite{
+        width: 390px;
+    }
+}
+@media screen and (min-width: 520px) {
+    .invite{
+        width: 400px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .invite{
+        width: 430px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .invite{
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .invite{
+        width: 650px;
+    }
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+.directions-container{
+    min-height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 3rem;
+    color: #a59d9c;
+    position: relative;
+
+    &::before{
+        content: '';
+        top: -1rem;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        background-color: #a59d9c;
+    }
+    .location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (min-width:768px){
+        .locations{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+    }
+    h2,h3,h4,p{
+        font-family: 'Laila', serif;
+    }
+}

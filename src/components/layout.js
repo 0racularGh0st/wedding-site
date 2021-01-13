@@ -7,7 +7,6 @@
 
 import React, {useEffect} from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import "./layout.scss"
 
@@ -20,15 +19,6 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
   })
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>

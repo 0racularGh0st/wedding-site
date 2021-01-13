@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
-import "./proposal.scss"
 const Proposal = () => {
     //useEffect(()=> {
     //     const rellax = new Rellax(".background-main-style",{
@@ -34,7 +33,6 @@ const Proposal = () => {
             <Img fluid={data.placeholderImage.childImageSharp.fluid} 
                 fadeIn 
                 durationFadeIn={1000}
-                className="proposal-background"
                 loading="eager"
                 />
         </div>

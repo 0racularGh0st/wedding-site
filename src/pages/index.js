@@ -1,12 +1,12 @@
 import React, {useEffect} from "react"
 // import { Link } from "gatsby"
-import { useStaticQuery, graphql, Link} from "gatsby"
+import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Rellax from 'rellax';
-import Proposal from '../components/proposal'
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import Invitation from '../components/invitation'
+import Directions from '../components/directions'
 import "./main.scss";
 
 const IndexPage = () => {
@@ -54,19 +54,17 @@ return (
         loading="eager"
         />
         <div className="nigel-naki-container">
-        <img src="/nigelnaki.svg"/>
+        <img src="/nigelnaki.svg" alt="nigelnaki" aria-label="nigelnaki"/>
         </div>
     </div>
     <div className="home-content-container-two">
+      <div className="bible-verse-container">
       <div className="bible-verse">
-            <h2>
-            "We love because he first loved us"
-            </h2>
-            <h4>
-              - 1 John 4:19
-            </h4>
+           <img src="/bibleverse.svg" alt="verse" aria-label="verse"/>
       </div>
-      <Proposal/>
+      </div>
+      <Invitation/>
+      <Directions/>
     </div>
   </Layout>
 )
