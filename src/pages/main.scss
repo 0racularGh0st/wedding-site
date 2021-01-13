@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.background-main-style{
+    filter: brightness(0.3);   
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    position: absolute !important;
+}
+.parallax-background{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+.home-text-style{
+    padding: 1rem;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+    align-items: center;
+    .home-main-heading{
+        font-family: 'Old Standard TT', serif;
+    }
+}
+.home-content-container-one{
+    position: relative;
+    height: 100vh;
+    .nigel-naki-container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 300px;
+    }
+    @media screen and (min-width: 320px) {
+        .nigel-naki-container{
+            width: 300px;
+        }
+    }
+    @media screen and (min-width: 420px) {
+        .nigel-naki-container{
+            width: 320px;
+        }
+    }
+    @media screen and (min-width: 520px) {
+        .nigel-naki-container{
+            width: 350px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .nigel-naki-container{
+            width: 400px;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .nigel-naki-container{
+            width: 500px;
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        .nigel-naki-container{
+            width: 650px;
+        }
+    }
+    
+
+}
+.home-content-container-two{
+    position: relative;
+    min-height: 100vh;
+    background: #fffef5;
+    padding-top: 3rem;
+    a{
+        text-decoration: none;
+    }
+
+    .bible-verse{
+        text-align: center;
+        box-shadow: var(--elevate10);
+        width: -webkit-max-content;
+        width: max-content;
+        padding: 1rem;
+        margin: auto auto 4rem auto;
+        z-index: 1;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        background: var(--bg-color);
+        max-width: 90vw;
+        h2,h4{
+            font-family: 'Parisienne', cursive;
+        }
+    }
+}
