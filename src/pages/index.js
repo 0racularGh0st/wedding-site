@@ -18,6 +18,10 @@ const IndexPage = () => {
 //   });
 // })
   useEffect(()=> {
+    const viewportDiff = document.documentElement.clientHeight - window.innerHeight;
+    let container1= document.querySelector(".home-content-container-one");
+    //console.log(container1);
+    container1.style.height = `calc(100vh + ${viewportDiff}px)`;
     window.scrollTo(0,0);
     const rellax = new Rellax(".background-main-style",{
       speed: -4,
@@ -45,7 +49,7 @@ const IndexPage = () => {
 `)
 return (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Invite" />
     <div className="home-content-container-one">
         <Img fluid={data.placeholderImage.childImageSharp.fluid} 
         fadeIn 
